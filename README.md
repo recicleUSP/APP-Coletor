@@ -8,7 +8,7 @@
 Recicle++ is a project created with React, Expo and TypeScript to help recycling donors to match recycling pickers.
 
 ## Links
-+ <a href="https://www.figma.com/file/xsF6PknU3niy6Zae7vLHYg/Recicle%2B?node-id=0%3A1">Figma Prototype</a>
++ <a href="https://www.figma.com/file/xsF6PknU3niy6Zae7vLHYg/Recicle%2B?node-id=0%3A1](https://www.figma.com/file/xsF6PknU3niy6Zae7vLHYg/Recicle%2B?node-id=842%3A383)">Figma Prototype</a>
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
