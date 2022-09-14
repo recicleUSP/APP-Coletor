@@ -4,11 +4,11 @@
   </a>
 </p>
 
-# Recicle++ Coletor App
-Recicle++ is a project created with React, Expo and TypeScript to help recycling donors to match recycling pickers.
+# Ecodive App
+Ecodive is a project created with React, Expo and TypeScript to help recycling donors to match recycling pickers.
 
 ## Links
-+ <a href="https://www.figma.com/file/xsF6PknU3niy6Zae7vLHYg/Recicle%2B?node-id=0%3A1](https://www.figma.com/file/xsF6PknU3niy6Zae7vLHYg/Recicle%2B?node-id=842%3A383)">Figma Prototype</a>
++ <a href="https://www.figma.com/file/xsF6PknU3niy6Zae7vLHYg/Recicle%2B?node-id=0%3A1">Prototype</a>
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -21,7 +21,7 @@ To run the project for the **first** time you must follow this steps:
 
 1. Clone the GitHub repository
 ```bash
-git clone https://github.com/vitorlape/Recicle-Coletor.git
+git clone https://github.com/fredxc/ecodive.git
 ```
 
 2. Install the dependencies and start the npm project
@@ -63,3 +63,7 @@ Ex: `git commit -m "Feature(banner-parallax): Added the parallax effect to the b
 ## Development Team
 * **Fred Xavier** - *Tech Leader and Front-end Dev* - [fredxc](https://github.com/fredxc)
 * **Vitor Laperriere** - *Front-end Dev* - [vitorlape](https://github.com/vitorlape)
+
+<p align="right">
+  Made with <b><i>markdown</i></b> and <b><i><3</i></b> by <a href="https://github.com/fredxc">Fred Xavier</a>
+</p>
