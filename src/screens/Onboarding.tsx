@@ -22,7 +22,7 @@ export default function Onboarding() {
           width="46%"
           bg="muted.400"
           _pressed={{ bg: "muted.500" }}
-          onPress={() => navigation.navigate("SignUp")}
+          
         >
           Cadastrar
         </Button>

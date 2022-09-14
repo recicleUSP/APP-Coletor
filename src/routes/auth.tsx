@@ -2,7 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Colors from "../constants/Colors";
 import SignIn from "../screens/auth/SignIn";
-import SignUp from "../screens/auth/SignUp";
+
 import { RootStackParamList } from "../types";
 import Onboarding from "../screens/Onboarding";
 
@@ -22,7 +22,7 @@ export default function AuthNavigator() {
     >
       <Stack.Screen name="Onboarding" component={Onboarding} />
       <Stack.Screen name="SignIn" component={SignIn} />
-      <Stack.Screen name="SignUp" component={SignUp} />
+   
     </Stack.Navigator>
   );
 }

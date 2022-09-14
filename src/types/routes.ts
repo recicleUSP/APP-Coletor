@@ -13,15 +13,10 @@ declare global {
 
 export type RootStackParamList = {
   SignIn: any;
-  SignUp: any;
+  
   Onboarding: any;
   Notification: any;
-  Donation: any;
-  DonationType: any;
-  DonationAmount: any;
-  DonationScheduling: any;
-  DonationAddMoreScheduling: any;
-  DonationResume: any;
+ 
   Root: NavigatorScreenParams<RootTabParamList> | undefined;
 };
 
@@ -30,7 +25,7 @@ export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
 
 export type RootTabParamList = {
   Home: undefined;
-  Impact: undefined;
+ 
   History: undefined;
   Profile: undefined;
 };
