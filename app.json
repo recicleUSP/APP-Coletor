@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Recicle Coletor",
-    "slug": "ecodive",
+    "slug": "recicle",
     "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,11 +20,11 @@
       "infoPlist": {
         "UIUserInterfaceStyle": "Light"
       },
-      "bundleIdentifier": "com.ecodive.donor"
+      "bundleIdentifier": "com.recicle.donor"
     },
     "android": {
       "versionCode": 1,
-      "package": "com.ecodive.donor",
+      "package": "com.recicle.donor",
       "userInterfaceStyle": "automatic",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",

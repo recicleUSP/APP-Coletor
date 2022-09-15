@@ -6,10 +6,10 @@ import {
   Avatar,
   Divider,
   ScrollView,
-} from "native-base";
-import { FontAwesome, FontAwesome5 } from "@expo/vector-icons";
+} from 'native-base';
+import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 
-import { useAuth } from "../../contexts";
+import { useAuth } from '../../contexts';
 
 export default function Profile() {
   const { signOut } = useAuth();
@@ -26,14 +26,14 @@ export default function Profile() {
         bg="muted.200"
         alignSelf="center"
         source={{
-          uri: "https://images.unsplash.com/photo-1510771463146-e89e6e86560e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
+          uri: 'https://images.unsplash.com/photo-1510771463146-e89e6e86560e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80',
         }}
       >
         R+
       </Avatar>
       <Box mt={2} flexDir="row" alignItems="center" justifyContent="center">
         <Text color="muted.600" fontSize="md">
-          4.79{" "}
+          4.79{' '}
         </Text>
         {[1, 2, 3, 4, 5].map((item) => (
           <Icon
@@ -72,7 +72,7 @@ export default function Profile() {
         <Divider />
       </Box>
       <Text mt={4} color="muted.400" textAlign="center">
-        Caso tenha alguma dúvida, entre em contato: contato@ecodive.com.br
+        Caso tenha alguma dúvida, entre em contato: contato@recicle.com.br
       </Text>
       <Button
         mx={6}

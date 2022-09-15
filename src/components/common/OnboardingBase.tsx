@@ -23,9 +23,9 @@ export const OnboardingBase: React.FC<OnboardingBaseParams> = ({
 
   return (
     <Box flex={1}>
-      <Box px={6} bg="emerald.500">
+      <Box px={6} bg="emerald.600">
         <Center pt={20}>
-          <Image size="md" source={img} alt="Ecodive Logo" />
+          <Image size="md" source={img} alt="Recicle Logo" />
           <Text
             my={4}
             color="white"
@@ -33,7 +33,7 @@ export const OnboardingBase: React.FC<OnboardingBaseParams> = ({
             fontWeight="bold"
             textAlign="center"
           >
-            {title || "ECODIVE"}
+            {title || "RECICLE COLETOR"}
           </Text>
         </Center>
       </Box>
@@ -46,7 +46,7 @@ export const OnboardingBase: React.FC<OnboardingBaseParams> = ({
           {children}
         </KeyboardAwareScrollView>
         <Text color="muted.500" textAlign="center" mb={4}>
-          Caso tenha alguma dúvida, entre em contato: contato@ecodive.com.br
+          Caso tenha alguma dúvida, entre em contato: contato@recicle.com.br
         </Text>
       </Box>
     </Box>
