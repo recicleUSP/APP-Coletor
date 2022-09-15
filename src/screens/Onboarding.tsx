@@ -9,7 +9,7 @@ export default function Onboarding() {
 
   return (
     <OnboardingBase>
-      <Heading>Bem-vinde!</Heading>
+      <Heading>Bem-vindo!</Heading>
       <Text my={4} fontSize="lg" lineHeight="sm">
         Estamos aqui para te ajudar a tornar o mundo um lugar melhor.
       </Text>
