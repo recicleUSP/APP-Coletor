@@ -23,7 +23,7 @@ export const OnboardingBase: React.FC<OnboardingBaseParams> = ({
 
   return (
     <Box flex={1}>
-      <Box px={6} bg="emerald.600">
+      <Box px={6} bg="emerald.700">
         <Center pt={20}>
           <Image size="md" source={img} alt="Recicle Logo" />
           <Text
