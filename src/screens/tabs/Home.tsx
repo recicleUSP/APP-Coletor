@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { Box, Text, Icon, Button, ScrollView, IconButton } from "native-base";
+import { Box, Text, Icon, Button, ScrollView, IconButton, Image, Center } from "native-base";
 import { useNavigation } from "@react-navigation/native";
 
 import { useCommon } from "../../contexts";
@@ -47,7 +47,7 @@ export default function Home() {
         </Box>
         
         <Text
-            my={10}
+            my={4}
             fontSize="3xl"
             lineHeight="xs"
             textAlign="center"
@@ -57,10 +57,14 @@ export default function Home() {
             Locais para coletar próximo a você
           </Text>
       </Box>
+      <Center>
+      <Image size={280} alt="capa" source={require('../../images/Mapa-SC.png')}/>
+
+      </Center>
       <Box
-        mb={6}
-        mt={4}
-        py={16}
+        
+        mt={8}
+        py={12}
         borderWidth={2}
         alignItems="center"
         bgColor="emerald.50"
@@ -79,7 +83,7 @@ export default function Home() {
         </Button>
       </Box>
      
-      <Box mb={8} />
+     
     </ScrollView>
   );
 }
