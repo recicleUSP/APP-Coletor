@@ -50,8 +50,8 @@ export default function History() {
         </Text>
       </Box>
       <Box p={6} mx={6} mt={-12} shadow="2" rounded={8} bgColor="white">
-        <Text color="emerald.600" fontSize="md">
-          <Text fontSize="lg" color="muted.300">
+        <Text color="muted.600" fontSize="md">
+          <Text fontSize="lg" color="emerald.600">
             ●{' '}
           </Text>
           Nenhum pedido para acompanhar!
@@ -72,88 +72,87 @@ export default function History() {
           Resumo Trimestral
         </Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-
-        <Box flexDirection="row">
-          <Box
-            height="150"
-            width="150"
-            shadow="2"
-            rounded={8}
-            bgColor="emerald.50"
-          >
-            <ReText
-              style={{
-                paddingTop: '30%',
-                position: 'absolute',
-                fontSize: 20,
-                color: 'green',
-                alignSelf: 'center',
-              }}
-              text={ProgressText}
-            />
-            <Svg
-              style={{
-                paddingTop: 40,
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
+          <Box flexDirection="row">
+            <Box
+              height="150"
+              width="150"
+              shadow="2"
+              rounded={8}
+              bgColor="emerald.50"
             >
-              <Circle
-                cx={'50%'}
-                cy={'40%'}
-                r={R}
-                stroke={'grey'}
-                strokeWidth={6}
+              <ReText
+                style={{
+                  paddingTop: '30%',
+                  position: 'absolute',
+                  fontSize: 20,
+                  color: 'green',
+                  alignSelf: 'center',
+                }}
+                text={ProgressText}
               />
-              <AnimatedCircle
-                cx={'50%'}
-                cy={'40%'}
-                r={R+1}
-                stroke={'green'}
-                strokeWidth={10}
-                strokeDasharray={CIRCLE_LENGHT}
-                animatedProps={AnimatedProps}
-                strokeLinecap={'round'}
-              />
-            </Svg>
-            <Text
-              alignSelf="center"
-              mt={'75%'}
-              position="absolute"
-              color="muted.600"
-              fontSize="xl"
-            >
-              PAPEL
-            </Text>
-          </Box>
-          <Box
-            height="150"
-            width="150"
-            shadow="2"
-            rounded={8}
-            bgColor="emerald.50"
-            ml={2}
-          >
-            <Text alignSelf="center"
-              mt={"15%"}
-              fontSize="6xl"
-              color="emerald.600"
+              <Svg
+                style={{
+                  paddingTop: 40,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
               >
-              12
-            </Text>
-            <Text
-               alignSelf="center"
-               mt={'70%'}
-               position="absolute"
-               color="muted.600"
-               fontSize="lg"
-               lineHeight={"xs"}
+                <Circle
+                  cx={'50%'}
+                  cy={'40%'}
+                  r={R}
+                  stroke={'grey'}
+                  strokeWidth={6}
+                />
+                <AnimatedCircle
+                  cx={'50%'}
+                  cy={'40%'}
+                  r={R + 1}
+                  stroke={'green'}
+                  strokeWidth={10}
+                  strokeDasharray={CIRCLE_LENGHT}
+                  animatedProps={AnimatedProps}
+                  strokeLinecap={'round'}
+                />
+              </Svg>
+              <Text
+                alignSelf="center"
+                mt={'75%'}
+                position="absolute"
+                color="muted.600"
+                fontSize="xl"
+              >
+                PAPEL
+              </Text>
+            </Box>
+            <Box
+              height="150"
+              width="150"
+              shadow="2"
+              rounded={8}
+              bgColor="emerald.50"
+              ml={2}
             >
-              {"   "}COLETAS CONCLUIDAS
-            </Text>
+              <Text
+                alignSelf="center"
+                mt={'15%'}
+                fontSize="6xl"
+                color="emerald.600"
+              >
+                12
+              </Text>
+              <Text
+                alignSelf="center"
+                mt={'70%'}
+                position="absolute"
+                color="muted.600"
+                fontSize="lg"
+                lineHeight={'xs'}
+              >
+                {'   '}COLETAS CONCLUIDAS
+              </Text>
+            </Box>
           </Box>
-        </Box>
-        
         </ScrollView>
       </Box>
 
