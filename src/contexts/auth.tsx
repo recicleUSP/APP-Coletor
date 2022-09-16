@@ -22,7 +22,7 @@ export const AuthProvider: React.FC = ({ children }) => {
   useEffect(() => {
     async function fetchToken() {
       const token = await SecureStore.getItemAsync("token");
-      if (token) setSigned(false);
+      if (token) setSigned(true);
       else setSigned(false);
 
       setTimeout(() => SplashScreen.hideAsync(), 250);

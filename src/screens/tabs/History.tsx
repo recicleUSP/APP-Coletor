@@ -50,7 +50,7 @@ export default function History() {
         </Text>
       </Box>
       <Box p={6} mx={6} mt={-12} shadow="2" rounded={8} bgColor="white">
-        <Text color="muted.600" fontSize="md">
+        <Text color="emerald.600" fontSize="md">
           <Text fontSize="lg" color="muted.300">
             ●{' '}
           </Text>
