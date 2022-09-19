@@ -59,7 +59,7 @@ export default function History() {
         <Button
           mt={4}
           size="lg"
-          shadow="2"
+          shadow="4"
           variant="solid"
           colorScheme="emerald"
         >
@@ -95,6 +95,7 @@ export default function History() {
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}
+
               >
                 <Circle
                   cx={'50%'}
@@ -122,6 +123,7 @@ export default function History() {
                 fontSize="xl"
               >
                 PAPEL
+
               </Text>
             </Box>
             <Box
@@ -129,6 +131,7 @@ export default function History() {
               width="150"
               shadow="2"
               rounded={8}
+
               bgColor="emerald.50"
               ml={2}
             >
@@ -149,59 +152,7 @@ export default function History() {
                 lineHeight={'xs'}
               >
                 {'   '}COLETAS CONCLUIDAS
-              </Text>
-            </Box>
-            <Box
-              height="150"
-              width="150"
-              shadow="2"
-              rounded={8}
-              ml={2}
-              bgColor="emerald.50"
-            >
-              <ReText
-                style={{
-                  paddingTop: '30%',
-                  position: 'absolute',
-                  fontSize: 20,
-                  color: 'green',
-                  alignSelf: 'center',
-                }}
-                text={ProgressText}
-              />
-              <Svg
-                style={{
-                  paddingTop: 40,
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                <Circle
-                  cx={'50%'}
-                  cy={'40%'}
-                  r={R}
-                  stroke={'grey'}
-                  strokeWidth={6}
-                />
-                <AnimatedCircle
-                  cx={'50%'}
-                  cy={'40%'}
-                  r={R + 1}
-                  stroke={'green'}
-                  strokeWidth={10}
-                  strokeDasharray={CIRCLE_LENGHT}
-                  animatedProps={AnimatedProps}
-                  strokeLinecap={'round'}
-                />
-              </Svg>
-              <Text
-                alignSelf="center"
-                mt={'75%'}
-                position="absolute"
-                color="muted.600"
-                fontSize="xl"
-              >
-                ALUMÍNIO
+
               </Text>
             </Box>
           </Box>

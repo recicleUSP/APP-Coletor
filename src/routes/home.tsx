@@ -1,15 +1,16 @@
-import * as React from "react";
-import { FontAwesome5 } from "@expo/vector-icons";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import * as React from 'react';
+import { FontAwesome5 } from '@expo/vector-icons';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Home from "../screens/tabs/Home";
-import Colors from "../constants/Colors";
+import Home from '../screens/tabs/Home';
+import Colors from '../constants/Colors';
 
-import History from "../screens/tabs/History";
-import Profile from "../screens/tabs/Profile";
-import Notification from "../screens/Notification";
-import { RootStackParamList, RootTabParamList } from "../types";
+import History from '../screens/tabs/History';
+import Profile from '../screens/tabs/Profile';
+import Notification from '../screens/Notification';
+import Collect from '../screens/Collect';
+import { RootStackParamList, RootTabParamList } from '../types';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -17,8 +18,9 @@ export function HomeNavigator() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Root" component={BottomTabNavigator} />
-    
-    <Stack.Screen name="Notification" component={Notification} />
+
+      <Stack.Screen name="Notification" component={Notification} />
+      <Stack.Screen name="Collect" component={Collect} />
     </Stack.Navigator>
   );
 }
@@ -39,7 +41,7 @@ function BottomTabNavigator() {
         name="Home"
         component={Home}
         options={{
-          title: "INÍCIO",
+          title: 'INÍCIO',
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="recycle" color={color} />
           ),
@@ -49,18 +51,18 @@ function BottomTabNavigator() {
         name="History"
         component={History}
         options={{
-          title: "COLETAS",
+          title: 'COLETAS',
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="history" color={color} />
           ),
         }}
       />
-      
+
       <BottomTab.Screen
         name="Profile"
         component={Profile}
         options={{
-          title: "PERFIL",
+          title: 'PERFIL',
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="user-alt" color={color} />
           ),
@@ -71,7 +73,7 @@ function BottomTabNavigator() {
 }
 
 function TabBarIcon(props: {
-  name: React.ComponentProps<typeof FontAwesome5>["name"];
+  name: React.ComponentProps<typeof FontAwesome5>['name'];
   color: string;
 }) {
   return <FontAwesome5 size={20} style={{ marginBottom: -8 }} {...props} />;
