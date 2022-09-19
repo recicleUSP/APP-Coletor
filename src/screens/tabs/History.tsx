@@ -59,7 +59,7 @@ export default function History() {
         <Button
           mt={4}
           size="lg"
-          shadow="2"
+          shadow="4"
           variant="solid"
           colorScheme="emerald"
           leftIcon={<Icon size="sm" name="recycle" as={FontAwesome5} />}
