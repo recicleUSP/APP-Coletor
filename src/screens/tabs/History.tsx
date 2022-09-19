@@ -54,7 +54,7 @@ export default function History() {
           <Text fontSize="lg" color="emerald.600">
             ●{' '}
           </Text>
-          Nenhum pedido para acompanhar!
+          12 coletas em andamento
         </Text>
         <Button
           mt={4}
@@ -62,9 +62,8 @@ export default function History() {
           shadow="4"
           variant="solid"
           colorScheme="emerald"
-          leftIcon={<Icon size="sm" name="recycle" as={FontAwesome5} />}
         >
-          CRIAR COLETA
+          ACOMPANHAR
         </Button>
       </Box>
       <Box my={8} px={6}>
@@ -96,6 +95,7 @@ export default function History() {
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}
+
               >
                 <Circle
                   cx={'50%'}
@@ -123,6 +123,7 @@ export default function History() {
                 fontSize="xl"
               >
                 PAPEL
+
               </Text>
             </Box>
             <Box
@@ -130,6 +131,7 @@ export default function History() {
               width="150"
               shadow="2"
               rounded={8}
+
               bgColor="emerald.50"
               ml={2}
             >
@@ -150,6 +152,7 @@ export default function History() {
                 lineHeight={'xs'}
               >
                 {'   '}COLETAS CONCLUIDAS
+
               </Text>
             </Box>
           </Box>
@@ -213,7 +216,93 @@ export default function History() {
                   opacity={0.7}
                 />
                 <Text fontSize="sm" color="muted.600" ml={2} mt={0.5}>
-                  Rua Salomão Dibbo, 360
+                  Rua Episcopal, 360
+                </Text>
+              </Box>
+
+              <Box flexDirection="row">
+                <Icon
+                  mt={1.5}
+                  size="sm"
+                  name="check-circle"
+                  as={FontAwesome}
+                  color="emerald.600"
+                  opacity={0.7}
+                />
+                <Text fontSize="sm" color="muted.600" ml={2} mt={0.5}>
+                  Coleta Concluida
+                </Text>
+              </Box>
+            </Box>
+            <Divider mt={4} />
+            <Box flexDirection="row" mt={2} justifyContent="space-between">
+              <Text fontSize="sm" color="muted.600" ml={2} mt={0.5}>
+                Avaliar Coleta
+              </Text>
+              <Box flexDirection="row">
+                {[1, 2, 3, 4, 5].map((item) => (
+                  <Icon
+                    size="md"
+                    key={item}
+                    name="star"
+                    as={FontAwesome}
+                    color="emerald.600"
+                  />
+                ))}
+              </Box>
+            </Box>
+          </Box>
+          <Box p={3} mt={4} shadow="2" rounded={8} bgColor="white">
+            <Box
+              flexDirection="row"
+              alignItems="center"
+              justifyContent="space-between"
+            >
+              <Box flexDirection="row">
+                <Avatar
+                  size="sm"
+                  bg="muted.200"
+                  source={{
+                    uri: 'https://images.unsplash.com/photo-1510771463146-e89e6e86560e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80',
+                  }}
+                >
+                  R+
+                </Avatar>
+                <Text color="muted.600" fontSize="md" pl={3}>
+                  José Marcos Gontijo
+                </Text>
+              </Box>
+              <Button
+                variant="ghost"
+                colorScheme="muted"
+                leftIcon={
+                  <Icon size="sm" name="chevron-right" as={FontAwesome5} />
+                }
+              ></Button>
+            </Box>
+            <Divider mt={2} />
+            <Box flexDirection="column" mt={2}>
+              <Box flexDirection="row">
+                <Text fontSize="md" color="emerald.600" opacity={0.7}>
+                  3<Text fontSize="xs">x</Text>
+                </Text>
+
+                <Text fontSize="sm" color="muted.600" ml={2} mt={0.5}>
+                  Caixa 3KG de Latas
+                </Text>
+              </Box>
+
+              <Box flexDirection="row">
+                <Icon
+                  mt={1.5}
+                  size="sm"
+                  name="map-marker"
+                  as={FontAwesome}
+                  color="emerald.600"
+                  opacity={0.7}
+                />
+                <Text fontSize="sm" color="muted.600" ml={2} mt={0.5}>
+                  Rua Salomão Dibbo, 98
                 </Text>
               </Box>
 
