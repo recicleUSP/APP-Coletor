@@ -1,17 +1,24 @@
 import { useState } from "react";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { Box, Text, Icon, Button, ScrollView, IconButton, Image, Center } from "native-base";
+import {
+  Box,
+  Text,
+  Icon,
+  Button,
+  ScrollView,
+  IconButton,
+  Image,
+  Center,
+} from "native-base";
 import { useNavigation } from "@react-navigation/native";
 
 import { useCommon } from "../../contexts";
-
-
+import { TouchableOpacity } from "react-native";
 
 export default function Home() {
   const { setDevAlert } = useCommon();
   const [firstTime, setFirstTime] = useState(true);
   const navigation = useNavigation();
- 
 
   return (
     <ScrollView bgColor="white">
@@ -35,34 +42,36 @@ export default function Home() {
             variant="solid"
             bgColor="emerald.50"
             onPress={() => navigation.navigate("Notification")}
-            
             _icon={{
               name: "bell",
               paddingLeft: 0.5,
               as: FontAwesome5,
               color: "emerald.600",
-            
             }}
           />
         </Box>
-        
+
         <Text
-            my={4}
-            fontSize="3xl"
-            lineHeight="xs"
-            textAlign="center"
-            color="emerald.600"
-            onPress={() => setFirstTime(false)}
-          >
-            Locais para coletar próximo a você
-          </Text>
+          my={4}
+          fontSize="3xl"
+          lineHeight="xs"
+          textAlign="center"
+          color="emerald.600"
+          onPress={() => setFirstTime(false)}
+        >
+          Locais para coletar próximo a você
+        </Text>
       </Box>
       <Center>
-      <Image size={280} alt="capa" source={require('../../images/Mapa-SC.png')}/>
-
+        <TouchableOpacity onPress={() => navigation.navigate("Osrm")}>
+          <Image
+            size={280}
+            alt="capa"
+            source={require("../../images/Mapa-SC.png")}
+          />
+        </TouchableOpacity>
       </Center>
       <Box
-        
         mt={8}
         py={12}
         borderWidth={2}
@@ -82,8 +91,6 @@ export default function Home() {
           COLETAR
         </Button>
       </Box>
-     
-     
     </ScrollView>
   );
 }

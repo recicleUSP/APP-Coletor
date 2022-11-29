@@ -10,6 +10,7 @@ import History from '../screens/tabs/History';
 import Profile from '../screens/tabs/Profile';
 import Notification from '../screens/Notification';
 import Collect from '../screens/Collect';
+import Osrm from '../screens/Osrm';
 import { RootStackParamList, RootTabParamList } from '../types';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -21,6 +22,8 @@ export function HomeNavigator() {
 
       <Stack.Screen name="Notification" component={Notification} />
       <Stack.Screen name="Collect" component={Collect} />
+      <Stack.Screen name="Osrm" component={Osrm} />
+
     </Stack.Navigator>
   );
 }
