@@ -17,6 +17,7 @@ export type RootStackParamList = {
   Onboarding: any;
   Notification: any;
   Collect: any;
+  Osrm: any;
   Root: NavigatorScreenParams<RootTabParamList> | undefined;
 };
 
